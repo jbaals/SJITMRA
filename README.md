@@ -21,6 +21,6 @@ The `.json`-files are structured as follows
 - an array called `travelTimes`, which includes travel times between the suppliers (only used for instance generation, not in the model solved in the paper)
 - an array called `probabilities`, which includes the probability of each scenario
 - an array called `routeSets`, which includes an array for each set of `routes. routeSets[0]` corresponds to the routes that are used in the CRS-instances, `routes. routeSets[1]` to the RRS-instances, and `routes. routeSets[2]` to the MRS-instances. Note that the folder `shipments_120_2` only includes CRS- and RRS-instances. Only the RRS-instances were used in the paper. Instance `Shipment120-RRS-10` in the paper coresponds to `instances_shipments_120_2_0_instance.json`, `Shipment120-RRS-11` to `instances_shipments_120_2_1_instance.json` and so on. A route is described by a tuple with
-    - `item1` points to the time window in the file's top level attribute `timeWindows`, and
-    - `item2` points to the supplier's id, (i.e., `suppliers.id`).
+    - `item1` that points to the time window in the file's top level attribute `timeWindows`, and
+    - `item2` that points to the supplier's id, (i.e., `suppliers.id`).
 - an array called `timeWindows`, which includes the `start` and `end` of each time window.
