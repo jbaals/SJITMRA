@@ -14,7 +14,7 @@ The `.json`-files are structured as follows
         - an array `dueDate` for the due date of the shipment in each scenario
         - an earliness cost per time unit `earlinessCpTU`
         - a tardiness cost per time unit `tardinessCpTU`
-        - a `reschedulingCosts` correspnding to the rescheduling cost of the shipment (independent from the scenario)
+        - a `reschedulingCosts` corresponding to the rescheduling cost of the shipment (independent from the scenario)
     - an array `timeWindows` (not used in the paper)
     - an earliness cost per time unit `earlinessCpTU` (not used in the paper)
     - a tardiness cost per time unit `tardinessCpTU` (not used in the paper)
