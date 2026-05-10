@@ -25,8 +25,8 @@ An array of `supplier` objects, each containing:
     - **`tardinessCpTU`**: Tardiness cost per time unit.
     - **`reschedulingCosts`**: The cost of rescheduling (independent of the scenario).
 - **`timeWindows`** (Array): *Not used in the paper.*
-- **`earlinessCpTU`** (Float): *Not used in the paper.*
-- **`tardinessCpTU`** (Float): *Not used in the paper.*
+- **`earlinessCpTU`**: *Not used in the paper.*
+- **`tardinessCpTU`**: *Not used in the paper.*
 
 ### `travelTimes` (Array)
 Contains travel times between suppliers. 
@@ -44,7 +44,7 @@ An array containing different sets of routes:
 
 **Route Definition:** Each route is a tuple `(item1, item2)` where:
 - `item1`: A reference to a time window index from the top-level `timeWindows` attribute.
-- `item2`: A reference to a supplier ID (`suppliers.id`).
+- `item2`: An array with references to supplier IDs (`suppliers.id`).
 
 ### `timeWindows` (Array)
 Defines the `start` and `end` timestamps for each time window.
@@ -52,6 +52,14 @@ Defines the `start` and `end` timestamps for each time window.
 ## Instance Mapping Reference
 
 To map instances mentioned in the paper to the files in this repository:
+- **Paper Instance** `Shipment120-{CRS, MRS, RRS}-0` $\rightarrow$ **File** `instances_shipments_120_0_instance.json`
+- **Paper Instance** `Shipment120-{CRS, MRS, RRS}-1` $\rightarrow$ **File** `instances_shipments_120_1_instance.json`
+*(and so on...)*
+
 - **Paper Instance** `Shipment120-RRS-10` $\rightarrow$ **File** `instances_shipments_120_2_0_instance.json`
 - **Paper Instance** `Shipment120-RRS-11` $\rightarrow$ **File** `instances_shipments_120_2_1_instance.json`
+*(and so on...)*
+
+- **Paper Instance** `Shipment400-{CRS, MRS, RRS}-0` $\rightarrow$ **File** `instances_shipments_400_0_instance.json`
+- **Paper Instance** `Shipment400-{CRS, MRS, RRS}-1` $\rightarrow$ **File** `instances_shipments_400_1_instance.json`
 *(and so on...)*
